@@ -7,13 +7,6 @@ Version:	1.66b
 Release:	1
 License:	distributable - see LICENSE
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(es):	Aplicaciones/Red
-Group(fr):	Applications/Réseau
-Group(pl):	Aplikacje/Sieciowe
-Group(pt):	Aplicações/Rede
-Group(pt_BR):	Aplicações/Rede
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Source0:	http://browser.arachne.cz/%{name}-%{version}.tar.gz
 URL:		http://browser.arachne.cz/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,13 +23,6 @@ Szybka, ma³a, nie¼le siê prezentuj±ca przegl±darka www.
 Summary:	Configuration files for Arachne
 Summary(pl):	Pliki konfiguracyjne u¿ywane przez Arachne
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(es):	Aplicaciones/Red
-Group(fr):	Applications/Réseau
-Group(pl):	Aplikacje/Sieciowe
-Group(pt):	Aplicações/Rede
-Group(pt_BR):	Aplicações/Rede
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	glibc >= 2.1
 
 %description common
@@ -49,13 +35,6 @@ Pliki konfiguracyjne u¿ywane przez obie wersje Arachne.
 Summary:	Arachne web browser for svgalib
 Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z svgalib
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(es):	Aplicaciones/Red
-Group(fr):	Applications/Réseau
-Group(pl):	Aplikacje/Sieciowe
-Group(pt):	Aplicações/Rede
-Group(pt_BR):	Aplicações/Rede
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	arachne-common
 
 %description svga
@@ -79,13 +58,6 @@ Informacje na temat licencji mo¿na znale¼æ w pliku
 Summary:	Arachne web browser for ggi
 Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z biblioteki ggi
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(es):	X11/Aplicaciones/Red
-Group(fr):	X11/Applications/Réseau
-Group(pl):	X11/Aplikacje/Sieciowe
-Group(pt_BR):	X11/Aplicações/Rede
-Group(pt):	X11/Aplicações/Rede
-Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	arachne-common
 
 %description ggi
