@@ -9,7 +9,6 @@ License:	distributable (see LICENSE)
 Group:		Applications/Networking
 Source0:	http://browser.arachne.cz/%{name}-%{version}.tar.gz
 # Source0-md5:	2e51c4951114814f60daf5484975c59b
-# Source0-size:	745111
 URL:		http://browser.arachne.cz/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveOS:	Linux
