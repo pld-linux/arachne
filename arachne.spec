@@ -15,7 +15,6 @@ BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveOS:    Linux
 ExclusiveArch:	%{ix86}
 
-
 %description
 Small and fast web browser.
 
@@ -53,7 +52,7 @@ introduced by Arachne.
 Information on the license may be found in the
 file %{_docdir}/%{name}-common-%{version}/LICENSE.
 
-%descripion svga -l pl
+%description svga -l pl
 To jest wersja beta przegl±darki www - Arachne, która korzysta z biblioteki
 svgalib. Arachne jest szybka i ma³a, niestety nie obs³uguje jeszcze
 protoko³u https ani JavaScriptu, ani CSS.
@@ -78,7 +77,7 @@ introduced by Arachne.
 Information on the license may be found in the
 file %{_docdir}/%{name}-common-%{version}/LICENSE.
 
-%descripion ggi -l pl
+%description ggi -l pl
 To jest wersja beta przegl±darki www - Arachne, która korzysta z biblioteki
 ggi. Arachne jest szybka i ma³a, niestety nie obs³uguje jeszcze
 protoko³u https ani JavaScriptu, ani CSS.
@@ -89,21 +88,18 @@ Informacje na temat licencji mo¿na znale¼æ w pliku
 %prep
 %setup -q
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,\
-%{_datadir}/arachne/{templates,iso-8859-1/codepage,iso-8859-2/codepage,\
-gui,ikons},/usr/doc}
+	%{_datadir}/arachne/{templates,iso-8859-1/codepage,iso-8859-2/codepage,\
+	gui,ikons},/usr/doc}
 
 install bin/* $RPM_BUILD_ROOT%{_bindir}
 install share/arachne/arachne-install $RPM_BUILD_ROOT%{_bindir}
 install man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
-cp -r share/arachne/* $RPM_BUILD_ROOT%{_datadir}/arachne
+cp -rf share/arachne/* $RPM_BUILD_ROOT%{_datadir}/arachne
 
 ln -sf %{_docdir}/arachne-%{version} $RPM_BUILD_ROOT/usr/doc/arachne
-
 
 cat > $RPM_BUILD_ROOT%{_bindir}/arachne << EOF
 #!/bin/sh
@@ -114,6 +110,9 @@ else
 /usr/bin/arachne-ggi $@
 fi
 EOF
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files common
 %defattr(644,root,root,755)
@@ -131,6 +130,3 @@ EOF
 %files svga
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/arachne-svgalib
-
-%clean
-rm -rf $RPM_BUILD_ROOT
