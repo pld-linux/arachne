@@ -1,3 +1,4 @@
+$Revision: 1.2 $
 Summary:	Arachne - web browser
 Summary(es):	Navegador de Internet Arachne
 Summary(pl):	Arachne - przegl±darka WWW
@@ -31,7 +32,7 @@ Group(pl):	Aplikacje/Sieciowe
 Requires:	glibc >= 2.1
 
 %description common
-Files shared beetwen svgalib and ggi versions of Arachne.
+Files shared between svgalib and ggi versions of Arachne.
 
 %description common -l pl
 Pliki konfiguracyjne u¿ywane przez obie wersje Arachne.
