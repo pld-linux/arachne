@@ -1,4 +1,3 @@
-$Revision: 1.2 $
 Summary:	Arachne - web browser
 Summary(es):	Navegador de Internet Arachne
 Summary(pl):	Arachne - przegl±darka WWW
