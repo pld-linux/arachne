@@ -51,7 +51,7 @@ Information on the license may be found in the file
 %description svga -l pl
 To jest wersja beta przegl±darki WWW - Arachne, która korzysta z
 biblioteki svgalib. Arachne jest szybka i ma³a, niestety nie obs³uguje
-jeszcze protoko³u https ani JavaScriptu, ani CSS.
+jeszcze protoko³u HTTPS ani JavaScriptu, ani CSS.
 
 Informacje na temat licencji mo¿na znale¼æ w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
@@ -74,7 +74,7 @@ Information on the license may be found in the file
 %description ggi -l pl
 To jest wersja beta przegl±darki WWW - Arachne, która korzysta z
 biblioteki ggi. Arachne jest szybka i ma³a, niestety nie obs³uguje
-jeszcze protoko³u https ani JavaScriptu, ani CSS.
+jeszcze protoko³u HTTPS ani JavaScriptu, ani CSS.
 
 Informacje na temat licencji mo¿na znale¼æ w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
