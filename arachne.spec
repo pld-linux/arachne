@@ -9,7 +9,7 @@ License:	distributable
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
-Source0:	http://storage.prog.cz/xchaos/arachne-1.66b.tar.gz
+Source0:	http://browser.arachne.cz/%{name}-%{version}.tar.gz
 URL:		http://browser.arachne.cz
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveOS:    Linux
