@@ -5,14 +5,19 @@ Summary(pt_BR):	Navegador Arachne
 Name:		arachne
 Version:	1.66b
 Release:	1
-License:	distributable
+License:	distributable - see LICENSE
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
+Group(es):	Aplicaciones/Red
+Group(fr):	Applications/Réseau
 Group(pl):	Aplikacje/Sieciowe
+Group(pt):	Aplicações/Rede
+Group(pt_BR):	Aplicações/Rede
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Source0:	http://browser.arachne.cz/%{name}-%{version}.tar.gz
-URL:		http://browser.arachne.cz
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-ExclusiveOS:    Linux
+URL:		http://browser.arachne.cz/
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+ExclusiveOS:	Linux
 ExclusiveArch:	%{ix86}
 
 %description
@@ -26,7 +31,12 @@ Summary:	Configuration files for Arachne
 Summary(pl):	Pliki konfiguracyjne u¿ywane przez Arachne
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
+Group(es):	Aplicaciones/Red
+Group(fr):	Applications/Réseau
 Group(pl):	Aplikacje/Sieciowe
+Group(pt):	Aplicações/Rede
+Group(pt_BR):	Aplicações/Rede
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	glibc >= 2.1
 
 %description common
@@ -40,22 +50,27 @@ Summary:	Arachne web browser for svgalib
 Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z svgalib
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
+Group(es):	Aplicaciones/Red
+Group(fr):	Applications/Réseau
 Group(pl):	Aplikacje/Sieciowe
+Group(pt):	Aplicações/Rede
+Group(pt_BR):	Aplicações/Rede
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	arachne-common
 
 %description svga
-Arachne is web browser. This is beta release for svgalib.
-Arachne uses external programs to convert JPEGs (djpeg) and PNGs(convert)
-to BMPs, because BMP are faster to display. Few interesting ideas are
+Arachne is web browser. This is beta release for svgalib. Arachne uses
+external programs to convert JPEGs (djpeg) and PNGs(convert) to BMPs,
+because BMP are faster to display. Few interesting ideas are
 introduced by Arachne.
 
-Information on the license may be found in the
-file %{_docdir}/%{name}-common-%{version}/LICENSE.
+Information on the license may be found in the file
+%{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %description svga -l pl
-To jest wersja beta przegl±darki www - Arachne, która korzysta z biblioteki
-svgalib. Arachne jest szybka i ma³a, niestety nie obs³uguje jeszcze
-protoko³u https ani JavaScriptu, ani CSS.
+To jest wersja beta przegl±darki www - Arachne, która korzysta z
+biblioteki svgalib. Arachne jest szybka i ma³a, niestety nie obs³uguje
+jeszcze protoko³u https ani JavaScriptu, ani CSS.
 
 Informacje na temat licencji mo¿na znale¼æ w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
@@ -65,22 +80,27 @@ Summary:	Arachne web browser for ggi
 Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z biblioteki ggi
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
+Group(es):	X11/Aplicaciones/Red
+Group(fr):	X11/Applications/Réseau
 Group(pl):	X11/Aplikacje/Sieciowe
+Group(pt_BR):	X11/Aplicações/Rede
+Group(pt):	X11/Aplicações/Rede
+Group(ru):	X11/ðÒÉÌÏÖÅÎÉÑ/óÅÔÅ×ÙÅ
 Requires:	arachne-common
 
 %description ggi
-Arachne is web browser. This is beta release for ggi.
-Arachne uses external programs to convert JPEGs (djpeg) and PNGs(convert)
-to BMPs, because BMP are faster to display. Few interesting ideas are
+Arachne is web browser. This is beta release for ggi. Arachne uses
+external programs to convert JPEGs (djpeg) and PNGs(convert) to BMPs,
+because BMP are faster to display. Few interesting ideas are
 introduced by Arachne.
 
-Information on the license may be found in the
-file %{_docdir}/%{name}-common-%{version}/LICENSE.
+Information on the license may be found in the file
+%{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %description ggi -l pl
-To jest wersja beta przegl±darki www - Arachne, która korzysta z biblioteki
-ggi. Arachne jest szybka i ma³a, niestety nie obs³uguje jeszcze
-protoko³u https ani JavaScriptu, ani CSS.
+To jest wersja beta przegl±darki www - Arachne, która korzysta z
+biblioteki ggi. Arachne jest szybka i ma³a, niestety nie obs³uguje
+jeszcze protoko³u https ani JavaScriptu, ani CSS.
 
 Informacje na temat licencji mo¿na znale¼æ w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
@@ -90,26 +110,24 @@ Informacje na temat licencji mo¿na znale¼æ w pliku
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,\
-	%{_datadir}/arachne/{templates,iso-8859-1/codepage,iso-8859-2/codepage,\
-	gui,ikons},/usr/doc}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}/arachne,%{_prefix}/doc}
 
 install bin/* $RPM_BUILD_ROOT%{_bindir}
-install share/arachne/arachne-install $RPM_BUILD_ROOT%{_bindir}
 install man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
 cp -rf share/arachne/* $RPM_BUILD_ROOT%{_datadir}/arachne
 
-ln -sf %{_docdir}/arachne-%{version} $RPM_BUILD_ROOT/usr/doc/arachne
+ln -sf %{_docdir}/arachne-common-%{version} $RPM_BUILD_ROOT/usr/doc/arachne
 
 cat > $RPM_BUILD_ROOT%{_bindir}/arachne << EOF
 #!/bin/sh
-if [ "\$TERM" = "linux" ]
-then
-/usr/bin/arachne-svgalib $@
+if [ "\$TERM" = "linux" ]; then
+%{_bindir}/arachne-svgalib $@
 else
-/usr/bin/arachne-ggi $@
+%{_bindir}/arachne-ggi $@
 fi
 EOF
+
+gzip -9nf doc/arachne/{CHANGES,KEYWORDS,LICENSE,README,*.txt}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -118,10 +136,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/arachne
 %{_mandir}/man1/*
+%dir /usr/doc
 /usr/doc/arachne
 %doc doc/arachne/*
 %dir %{_datadir}/arachne
-%{_datadir}/arachne/*
+%{_datadir}/arachne/[g-t]*
+%attr(755,root,root) %{_datadir}/arachne/arachne-install
 
 %files ggi
 %defattr(644,root,root,755)
