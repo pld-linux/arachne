@@ -88,7 +88,7 @@ install bin/* $RPM_BUILD_ROOT%{_bindir}
 install man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
 cp -rf share/arachne/* $RPM_BUILD_ROOT%{_datadir}/arachne
 
-ln -sf %{_docdir}/arachne-common-%{version} $RPM_BUILD_ROOT/usr/doc/arachne
+ln -sf %{_docdir}/arachne-common-%{version} $RPM_BUILD_ROOT%{_prefix}/doc/arachne
 
 cat > $RPM_BUILD_ROOT%{_bindir}/arachne << EOF
 #!/bin/sh
@@ -108,8 +108,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/arachne
 %{_mandir}/man1/*
-%dir /usr/doc
-/usr/doc/arachne
+%dir %{_prefix}/doc
+%{_prefix}/doc/arachne
 %doc doc/arachne/*
 %dir %{_datadir}/arachne
 %{_datadir}/arachne/[g-t]*
