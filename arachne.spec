@@ -93,24 +93,22 @@ ln -sf %{_docdir}/arachne-common-%{version} $RPM_BUILD_ROOT%{_prefix}/doc/arachn
 cat > $RPM_BUILD_ROOT%{_bindir}/arachne << EOF
 #!/bin/sh
 if [ "\$TERM" = "linux" ]; then
-%{_bindir}/arachne-svgalib $@
+	exec %{_bindir}/arachne-svgalib $@
 else
-%{_bindir}/arachne-ggi $@
+	exec %{_bindir}/arachne-ggi $@
 fi
 EOF
-
-gzip -9nf doc/arachne/{CHANGES,KEYWORDS,LICENSE,README,*.txt}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files common
 %defattr(644,root,root,755)
+%doc doc/arachne/{CHANGES,KEYWORDS,LICENSE,README,*.txt}
 %attr(755,root,root) %{_bindir}/arachne
 %{_mandir}/man1/*
 %dir %{_prefix}/doc
 %{_prefix}/doc/arachne
-%doc doc/arachne/*
 %dir %{_datadir}/arachne
 %{_datadir}/arachne/[g-t]*
 %attr(755,root,root) %{_datadir}/arachne/arachne-install
