@@ -5,7 +5,7 @@ Summary(pt_BR):	Navegador Arachne
 Name:		arachne
 Version:	1.66b
 Release:	1
-License:	distributable - see LICENSE
+License:	distributable (see LICENSE)
 Group:		Applications/Networking
 Source0:	http://browser.arachne.cz/%{name}-%{version}.tar.gz
 URL:		http://browser.arachne.cz/
