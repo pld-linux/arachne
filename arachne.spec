@@ -18,7 +18,7 @@ ExclusiveArch:	%{ix86}
 Small and fast web browser.
 
 %description -l pl
-Szybka, ma³a, nie¼le siê prezentuj±ca przegl±darka www.
+Szybka, ma³a, nie¼le siê prezentuj±ca przegl±darka WWW.
 
 %package common
 Summary:	Configuration files for Arachne
@@ -48,7 +48,7 @@ Information on the license may be found in the file
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %description svga -l pl
-To jest wersja beta przegl±darki www - Arachne, która korzysta z
+To jest wersja beta przegl±darki WWW - Arachne, która korzysta z
 biblioteki svgalib. Arachne jest szybka i ma³a, niestety nie obs³uguje
 jeszcze protoko³u https ani JavaScriptu, ani CSS.
 
@@ -71,7 +71,7 @@ Information on the license may be found in the file
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %description ggi -l pl
-To jest wersja beta przegl±darki www - Arachne, która korzysta z
+To jest wersja beta przegl±darki WWW - Arachne, która korzysta z
 biblioteki ggi. Arachne jest szybka i ma³a, niestety nie obs³uguje
 jeszcze protoko³u https ani JavaScriptu, ani CSS.
 
