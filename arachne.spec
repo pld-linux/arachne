@@ -1,7 +1,7 @@
 Summary:	Arachne - web browser
-Summary(es.UTF-8):   Navegador de Internet Arachne
-Summary(pl.UTF-8):   Arachne - przeglądarka WWW
-Summary(pt_BR.UTF-8):   Navegador Arachne
+Summary(es.UTF-8):	Navegador de Internet Arachne
+Summary(pl.UTF-8):	Arachne - przeglądarka WWW
+Summary(pt_BR.UTF-8):	Navegador Arachne
 Name:		arachne
 Version:	1.66b
 Release:	2
@@ -22,7 +22,7 @@ Szybka, mała, nieźle się prezentująca przeglądarka WWW.
 
 %package common
 Summary:	Configuration files for Arachne
-Summary(pl.UTF-8):   Pliki konfiguracyjne używane przez Arachne
+Summary(pl.UTF-8):	Pliki konfiguracyjne używane przez Arachne
 Group:		Applications/Networking
 Requires:	glibc >= 2.1
 
@@ -34,7 +34,7 @@ Pliki konfiguracyjne używane przez obie wersje Arachne.
 
 %package svga
 Summary:	Arachne web browser for svgalib
-Summary(pl.UTF-8):   Wersja przeglądarki Arachne korzystająca z svgalib
+Summary(pl.UTF-8):	Wersja przeglądarki Arachne korzystająca z svgalib
 Group:		Applications/Networking
 Requires:	arachne-common
 
@@ -57,7 +57,7 @@ Informacje na temat licencji można znaleźć w pliku
 
 %package ggi
 Summary:	Arachne web browser for ggi
-Summary(pl.UTF-8):   Wersja przeglądarki Arachne korzystająca z biblioteki ggi
+Summary(pl.UTF-8):	Wersja przeglądarki Arachne korzystająca z biblioteki ggi
 Group:		X11/Applications/Networking
 Requires:	arachne-common
 
