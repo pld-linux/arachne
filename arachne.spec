@@ -1,7 +1,7 @@
 Summary:	Arachne - web browser
-Summary(es):	Navegador de Internet Arachne
-Summary(pl):	Arachne - przegl±darka WWW
-Summary(pt_BR):	Navegador Arachne
+Summary(es.UTF-8):   Navegador de Internet Arachne
+Summary(pl.UTF-8):   Arachne - przeglƒÖdarka WWW
+Summary(pt_BR.UTF-8):   Navegador Arachne
 Name:		arachne
 Version:	1.66b
 Release:	2
@@ -17,24 +17,24 @@ ExclusiveArch:	%{ix86}
 %description
 Small and fast web browser.
 
-%description -l pl
-Szybka, ma≥a, nieºle siÍ prezentuj±ca przegl±darka WWW.
+%description -l pl.UTF-8
+Szybka, ma≈Ça, nie≈∫le siƒô prezentujƒÖca przeglƒÖdarka WWW.
 
 %package common
 Summary:	Configuration files for Arachne
-Summary(pl):	Pliki konfiguracyjne uøywane przez Arachne
+Summary(pl.UTF-8):   Pliki konfiguracyjne u≈ºywane przez Arachne
 Group:		Applications/Networking
 Requires:	glibc >= 2.1
 
 %description common
 Files shared between svgalib and ggi versions of Arachne.
 
-%description common -l pl
-Pliki konfiguracyjne uøywane przez obie wersje Arachne.
+%description common -l pl.UTF-8
+Pliki konfiguracyjne u≈ºywane przez obie wersje Arachne.
 
 %package svga
 Summary:	Arachne web browser for svgalib
-Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z svgalib
+Summary(pl.UTF-8):   Wersja przeglƒÖdarki Arachne korzystajƒÖca z svgalib
 Group:		Applications/Networking
 Requires:	arachne-common
 
@@ -47,17 +47,17 @@ introduced by Arachne.
 Information on the license may be found in the file
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
-%description svga -l pl
-To jest wersja beta przegl±darki WWW - Arachne, ktÛra korzysta z
-biblioteki svgalib. Arachne jest szybka i ma≥a, niestety nie obs≥uguje
-jeszcze protoko≥u HTTPS ani JavaScriptu, ani CSS.
+%description svga -l pl.UTF-8
+To jest wersja beta przeglƒÖdarki WWW - Arachne, kt√≥ra korzysta z
+biblioteki svgalib. Arachne jest szybka i ma≈Ça, niestety nie obs≈Çuguje
+jeszcze protoko≈Çu HTTPS ani JavaScriptu, ani CSS.
 
-Informacje na temat licencji moøna znaleºÊ w pliku
+Informacje na temat licencji mo≈ºna znale≈∫ƒá w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %package ggi
 Summary:	Arachne web browser for ggi
-Summary(pl):	Wersja przegl±darki Arachne korzystaj±ca z biblioteki ggi
+Summary(pl.UTF-8):   Wersja przeglƒÖdarki Arachne korzystajƒÖca z biblioteki ggi
 Group:		X11/Applications/Networking
 Requires:	arachne-common
 
@@ -70,12 +70,12 @@ introduced by Arachne.
 Information on the license may be found in the file
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
-%description ggi -l pl
-To jest wersja beta przegl±darki WWW - Arachne, ktÛra korzysta z
-biblioteki ggi. Arachne jest szybka i ma≥a, niestety nie obs≥uguje
-jeszcze protoko≥u HTTPS ani JavaScriptu, ani CSS.
+%description ggi -l pl.UTF-8
+To jest wersja beta przeglƒÖdarki WWW - Arachne, kt√≥ra korzysta z
+biblioteki ggi. Arachne jest szybka i ma≈Ça, niestety nie obs≈Çuguje
+jeszcze protoko≈Çu HTTPS ani JavaScriptu, ani CSS.
 
-Informacje na temat licencji moøna znaleºÊ w pliku
+Informacje na temat licencji mo≈ºna znale≈∫ƒá w pliku
 %{_docdir}/%{name}-common-%{version}/LICENSE.
 
 %prep
